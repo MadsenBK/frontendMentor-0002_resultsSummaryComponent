@@ -23,8 +23,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [https://github.com/MadsenBK/frontendMentor-0002_resultsSummaryComponent]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Live Site URL: [https://shimmering-gingersnap-10489d.netlify.app/]
 ## My process
 
 ### Built with
