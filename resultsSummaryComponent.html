@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="resultsSummaryComponent.css">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+<body>
+
+  <div id="container">
+    
+    <div id="resultsContainer">
+        <p class="heading">Your Result</p>
+        <div id="circle">
+          <container>
+            <p id="score">76</p>
+            <p class="of">of 100</p>
+          </container>  
+        </div>    
+        <p class="scoreType">Great</p>
+        <p class="scoreInfo">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+
+    <div id="summaryContainer">
+
+        <p class="heading">Summary</p>
+
+        <div id="reaction">
+            <img src="./assets/images/icon-reaction.svg">
+            <p class="category">Reaction</p>
+            <p class="catScore">80</p>
+            <p class="of">/ 100</p>
+        </div>
+        <div id="memory">
+            <img src="./assets/images/icon-memory.svg">
+            <p class="category">Memory</p>
+            <p class="catScore">92</p>
+            <p class="of">/ 100</p>
+        </div>
+        <div id="verbal">
+            <img src="./assets/images/icon-verbal.svg">
+            <p class="category verbal">Verbal</p>
+            <p class="catScore">61</p>
+            <p class="of">/ 100</p>
+        </div>
+        <div id="visual">
+            <img src="./assets/images/icon-visual.svg">
+            <p class="category">Visual</p>
+            <p class="catScore">72</p>
+            <p class="of">/ 100</p>
+        </div>
+
+        <button type="submit">Continue</button>
+    
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://bkmadsen.com" target="_blank" >BK Madsen</a>.
+  </div>
+
+</body>
+</html>

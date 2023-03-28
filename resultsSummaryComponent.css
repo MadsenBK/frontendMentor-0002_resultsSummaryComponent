@@ -1,0 +1,325 @@
+:root {
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --pale_blue: hsl(221, 100%, 96%);
+    --light_lavender: hsl(241, 100%, 89%);
+    --dark_gray_blue: hsl(224, 30%, 27%);
+    
+    /*Background Gradient*/
+    --light_slate_blue: hsl(252, 100%, 67%);
+    --light_royal_lue: hsl(241, 81%, 54%);
+    
+    /*Circle Gradient*/
+    --violet_blue: hsla(256, 72%, 46%, 1);
+    --persian_blue: hsla(241, 72%, 46%, 0);
+
+    /*Catagories*/
+    --light_red: hsl(0, 100%, 67%);
+    --orangey_yellow: hsl(39, 100%, 56%);
+    --green_teal: hsl(166, 100%, 37%);
+    --cobalt_blue: hsl(234, 85%, 45%);
+}
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    width:700px;
+    margin: auto; 
+}
+
+#container {
+    padding:0;
+    margin-top: 30vh;
+    width: 46.5rem;
+    border-radius: 30px;
+    box-shadow: 1.5px 1.5px 35px 20px var(--pale_blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+}
+
+#resultsContainer, #summaryContainer {
+    width: 50%;
+    text-align: center;
+}
+
+
+/*Results Section*/
+
+#resultsContainer {
+    border-radius: 30px;
+    background: linear-gradient(
+        180deg,
+        var(--light_slate_blue),
+        var(--light_royal_lue));
+}
+
+    #resultsContainer .heading {
+        color: var(--light_lavender);
+        font-weight: 800;
+        font-size: 1.4rem;
+        padding: 10px 0;
+
+    }
+
+    #circle {
+        background: linear-gradient(
+            180deg,
+            var(--violet_blue) 0%,
+            var(--persian_blue) 95%);
+            box-shadow: 1px;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+
+    #score {
+        font-weight: 700;
+        font-size: 4em;
+        color: var(--white);
+        padding: 45px 0 0 0;
+        margin: 0;
+    }
+
+    #resultsContainer .of {
+        font-weight: 400;
+        font-size: 0.95em;
+        color: hsla(241, 100%, 89%, 0.5);
+        padding: 0;
+        margin: 0;
+    }
+
+    .scoreType {
+        color: var(--white);
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 0;
+        margin-bottom: 1.2rem;
+    }
+
+    .scoreInfo {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-weight: 400;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+/*Summary Section*/
+
+#summaryContainer {
+}
+
+    #summaryContainer .heading {
+        text-align: left;
+        padding-left: 10%;
+        padding: 1rem 0 0 2.2rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    #summaryContainer div {
+        width: 80%;
+        height: 3.75rem;
+        margin: auto;
+        border-radius: 10px; 
+        font-size: 1.0em;
+        font-weight: 700;
+
+        margin-bottom: 0.9rem;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #reaction {
+        background-color: hsl(0, 100%, 67%, 0.06)
+    }
+    #memory {
+        background-color: hsl(39, 100%, 56%, 0.06)
+    }
+    #verbal {
+        background-color: hsl(166, 100%, 37%, 0.06)
+    }
+    #visual {
+        background-color: hsl(234, 85%, 45%, 0.06)
+    }
+
+
+    #summaryContainer img {
+        padding: 0 0.6em 0 1em;
+        margin: 0;
+    }
+    
+    .category {
+        padding-right: 4.5em;
+    }
+
+    #reaction .category {
+        color: var(--light_red);
+    }
+    #memory .category {
+        color: hsl(39, 100%, 56%);
+    }
+    #verbal .category {
+        color: hsl(166, 100%, 37%);
+    }
+    #visual .category {
+        color: hsl(234, 85%, 45%);
+    }
+
+    #summaryContainer .catScore {
+        padding-right: 0.5em;
+    }
+
+    #summaryContainer .of {
+        color: hsla(224, 30%, 27%, 0.6);
+        padding-right: 1.1em;
+    }
+    
+button {
+    color: var(--white);
+    background-color: var(--dark_gray_blue);
+    width: 80%;
+    height: 3.25em;
+    border-radius: 30px;
+    font-size: 0.95em;
+    font-weight: 700;
+    margin: 1.25em auto;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    background: linear-gradient(
+        0deg, 
+       hsla(241, 81%, 54%) 15%, 
+       hsla(252, 100%, 67%) 100%); 
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    color: hsl(228, 45%, 44%);
+    position: absolute;
+    margin: auto;
+    padding-top: 3em;
+    padding-left: 15.5em;
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+
+    body {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #container {
+        width: 100%;
+        height: calc(100vh-1px);
+        margin-top: 20vh;
+        padding-top: 0;
+        box-shadow: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+
+    }
+
+    #resultsContainer {
+        height: 80%;
+        width: 50%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+        #resultsContainer .heading {
+            font-size: 1.1rem;
+            padding: 0 auto 0.5em auto;
+        }
+
+        #circle {
+            height: 150px;
+            width: 150px;
+        }
+        
+        #score {
+            font-size: 3em;
+            font-weight: 800;
+            padding: 2.5vh 0 0 0;
+            margin: 0;
+        }
+    
+        #resultsContainer .of {
+            font-weight: 400;
+            font-size: 0.85em;
+            padding: 0.25em 0 0 0;
+            margin: 0;
+        }
+    
+        .scoreType {
+            font-size: 1.5rem;
+            padding: .5em 0 .5em 0;
+            margin: 0;
+        }
+    
+        .scoreInfo {
+            font-size: 0.9em;
+            width: 75%;
+            margin: 0 auto;
+            padding: 0 0 2em 0;
+        }
+
+
+    #summaryContainer {
+    }
+    
+        #summaryContainer .heading {
+            padding: 0 0 0 1.58em;
+            font-size: 1.16rem;
+        }
+    
+        #summaryContainer div {
+            width: 85%;
+            height: 3.5rem;
+            font-size: 0.92em;
+        }
+
+        .category {
+            padding-right: 6em;
+            margin: 0;
+        }
+
+        #summaryContainer .of {
+            padding: 0 1em 0 0;
+        }
+
+
+    button {
+        width: 85%;
+        height: 3.1em;
+        font-size: 1em;
+        margin: 1em auto;
+    }
+
+    .attribution {
+        position: absolute;
+        margin: auto;
+        padding-top: 1em;
+        padding-left: 17em;
+        width: 225px;
+    }
+ 
+}
+
