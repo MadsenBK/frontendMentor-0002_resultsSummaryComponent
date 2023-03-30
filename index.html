@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
 
-  <link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
 
-  <title>Frontend Mentor | Results summary component</title>
+		<link rel="stylesheet" href="index.css" />
 
-</head>
-<body>
+		<title>Frontend Mentor | Results summary component</title>
+	</head>
+	<body>
+		<main>
+			<div role="contentinfo" id="resultsContainer">
+				<h1 class="heading">Your Result</h1>
+				<div id="circle">
+					<role="contentinfo" container>
+						<p id="score">76</p>
+						<p class="of">of 100</p>
+					</container>
+				</div>
+				<p role="banner" class="scoreType">Great</p>
+				<p role="contentinfo" class="scoreInfo">
+					You scored higher than 65% of the people who have taken
+					these tests.
+				</p>
+			</div>
 
-  <div id="container">
-    
-    <div id="resultsContainer">
-        <p class="heading">Your Result</p>
-        <div id="circle">
-          <container>
-            <p id="score">76</p>
-            <p class="of">of 100</p>
-          </container>  
-        </div>    
-        <p class="scoreType">Great</p>
-        <p class="scoreInfo">You scored higher than 65% of the people who have taken these tests.</p>
-    </div>
+			<div role="contentinfo" id="summaryContainer">
+				<p role="banner" class="heading">Summary</p>
 
-    <div id="summaryContainer">
+				<div role="contentinfo" id="reaction">
+					<img alt="red lightning bolt icon" src="./assets/images/icon-reaction.svg" />
+					<p class="category">Reaction</p>
+					<p class="catScore">80</p>
+					<p class="of">/ 100</p>
+				</div>
+				<div role="contentinfo" id="memory">
+					<img alt="yellow brain icon" src="./assets/images/icon-memory.svg" />
+					<p class="category">Memory</p>
+					<p class="catScore">92</p>
+					<p class="of">/ 100</p>
+				</div>
+				<div role="contentinfo" alt="green chat bubble icon" id="verbal">
+					<img src="./assets/images/icon-verbal.svg" />
+					<p class="category verbal">Verbal</p>
+					<p class="catScore">61</p>
+					<p class="of">/ 100</p>
+				</div>
+				<div role="contentinfo" id="visual">
+					<img alt="blue eye icon" src="./assets/images/icon-visual.svg" />
+					<p class="category">Visual</p>
+					<p class="catScore">72</p>
+					<p class="of">/ 100</p>
+				</div>
 
-        <p class="heading">Summary</p>
+				<button type="submit">Continue</button>
+			</div>
+		</main>
 
-        <div id="reaction">
-            <img src="./assets/images/icon-reaction.svg">
-            <p class="category">Reaction</p>
-            <p class="catScore">80</p>
-            <p class="of">/ 100</p>
-        </div>
-        <div id="memory">
-            <img src="./assets/images/icon-memory.svg">
-            <p class="category">Memory</p>
-            <p class="catScore">92</p>
-            <p class="of">/ 100</p>
-        </div>
-        <div id="verbal">
-            <img src="./assets/images/icon-verbal.svg">
-            <p class="category verbal">Verbal</p>
-            <p class="catScore">61</p>
-            <p class="of">/ 100</p>
-        </div>
-        <div id="visual">
-            <img src="./assets/images/icon-visual.svg">
-            <p class="category">Visual</p>
-            <p class="catScore">72</p>
-            <p class="of">/ 100</p>
-        </div>
-
-        <button type="submit">Continue</button>
-    
-    </div>
-
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://bkmadsen.com" target="_blank" >BK Madsen</a>.
-  </div>
-
-</body>
+		<footer class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a href="https://bkmadsen.com" target="_blank">BK Madsen</a>.
+		</footer>
+	</body>
 </html>
